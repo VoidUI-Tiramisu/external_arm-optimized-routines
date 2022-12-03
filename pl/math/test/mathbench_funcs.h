@@ -30,6 +30,8 @@ F (acoshf, 1.0, 10.0)
 F (asinhf, -10.0, 10.0)
 F (atanf, -10.0, 10.0)
 {"atan2f", 'f', 0, -10.0, 10.0, {.f = atan2f_wrap}},
+F (atanhf, -1.0, 1.0)
+F (cbrtf, -10.0, 10.0)
 F (cosf, -3.1, 3.1)
 F (coshf, -10.0, 10.0)
 F (erfcf, -4.0, 10.0)
@@ -41,6 +43,7 @@ F (log2f, 0.01, 11.1)
 F (sinf, -3.1, 3.1)
 F (sinhf, -10.0, 10.0)
 F (tanf, -3.1, 3.1)
+F (tanhf, -10.0, 10.0)
 
 D (acosh, 1.0, 10.0)
 D (asinh, -10.0, 10.0)
@@ -60,8 +63,11 @@ D (sinh, -10.0, 10.0)
 
 #if WANT_VMATH
 ZVNF (asinhf, -10.0, 10.0)
+ZVND (asinh, -10.0, 10.0)
 ZVNF (atanf, -10.0, 10.0)
+ZVNF (atanhf, -1.0, 1.0)
 ZVND (atan, -10.0, 10.0)
+ZVNF (cbrtf, -10.0, 10.0)
 ZVNF (coshf, -10.0, 10.0)
 ZVND (cosh, -10.0, 10.0)
 ZVNF (erff, -4.0, 4.0)
@@ -79,6 +85,7 @@ ZVND (log2, 0.01, 11.1)
 ZVNF (sinhf, -10.0, 10.0)
 ZVND (sinh, -10.0, 10.0)
 ZVNF (tanf, -3.1, 3.1)
+ZVNF (tanhf, -10.0, 10.0)
 {"__s_atan2f", 'f', 0, -10.0, 10.0, {.f = __s_atan2f_wrap}},
 {"__s_atan2", 'd', 0, -10.0, 10.0, {.d = __s_atan2_wrap}},
 {"__v_atan2f", 'f', 'v', -10.0, 10.0, {.vf = __v_atan2f_wrap}},
